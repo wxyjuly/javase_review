@@ -8,13 +8,19 @@
 	<description>java se review. 复习Java SE知识，深入源码</description>
 	
 	<dependencies>
-		
-	
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
 		    <groupId>junit</groupId>
 		    <artifactId>junit</artifactId>
 		    <version>4.12</version>
+		    <scope>test</scope>
+		</dependency>
+		
+		<!-- HttpClient -->
+		<dependency>
+		    <groupId>org.apache.httpcomponents</groupId>
+		    <artifactId>httpclient</artifactId>
+		    <version>4.3.5</version>
 		    <scope>test</scope>
 		</dependency>
 	</dependencies>

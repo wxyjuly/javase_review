@@ -7,7 +7,7 @@
  *
 */
 
-package org.leonxi.javase.zhanglong.day11.annotation.demo01;
+package org.leonxi.javase.zhanglong.day11.annotation.demo01.inner_annotation;
 /**
  * ClassName:OverrideTest <br/>
  * Date:     2017年10月20日 上午11:31:21 <br/>
@@ -23,7 +23,7 @@ public class OverrideTest {
 
 	@Override
 	public String toString() {
-		return "OverrideTest [toString()=" + super.toString() + "]";
+		return "OverrideTest-->Override parent...";
 	}
 
 }
