@@ -7,11 +7,10 @@
  *
 */
 
-package org.leanxi.httpclient;
+package org.leanxi.utils.httpclient;
 
 import java.io.IOException;
 import java.net.URI;
-import java.net.URISyntaxException;
 
 import org.apache.http.client.methods.CloseableHttpResponse;
 import org.apache.http.client.methods.HttpGet;

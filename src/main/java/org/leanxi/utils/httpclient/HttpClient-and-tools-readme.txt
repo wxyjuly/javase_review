@@ -2,3 +2,7 @@
 2. 构造工具类->HttpClientUtil,封装基本请求内容
 
 3. 常用模拟Http请求工具【chrome(PostMan);foxmail(HttpRequester)】
+   https://github.com/tommut/HttpRequester
+   
+   
+   

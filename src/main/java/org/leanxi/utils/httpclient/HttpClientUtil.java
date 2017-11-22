@@ -4,10 +4,10 @@
  * Package Name:org.leanxi.httpclient
  * Date:2017年11月16日上午11:43:14
  * Copyright (c) 2017, 【Leon Xi】 All Rights Reserved.
- * Tools 4 HttpClients
+ * Tools for HttpClients
 */
 
-package org.leanxi.httpclient;
+package org.leanxi.utils.httpclient;
 
 import java.io.IOException;
 import java.net.URI;
