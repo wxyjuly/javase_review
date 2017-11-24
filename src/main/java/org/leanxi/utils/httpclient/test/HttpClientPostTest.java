@@ -7,7 +7,7 @@
  *
 */
 
-package org.leanxi.utils.httpclient;
+package org.leanxi.utils.httpclient.test;
 
 import java.io.IOException;
 import java.util.ArrayList;

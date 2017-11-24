@@ -7,7 +7,7 @@
  *
 */
 
-package org.leanxi.utils.jsoup;
+package org.leanxi.utils.jsoup.test;
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
