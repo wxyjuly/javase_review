@@ -6,15 +6,15 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>javase</name>
 	<description>java se review. 复习Java SE知识，深入源码</description>
-	
-	<!-- 集中定义依赖版本号 （properties；dependencyManagement）-->
+
+	<!-- 集中定义依赖版本号 （properties；dependencyManagement） -->
 	<properties>
-	    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <encoding>UTF-8</encoding>
-        <java.version>1.8</java.version>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-        
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<encoding>UTF-8</encoding>
+		<java.version>1.8</java.version>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+
 		<junit.version>4.12</junit.version>
 		<spring.version>4.1.3.RELEASE</spring.version>
 		<mybatis.version>3.2.8</mybatis.version>
@@ -39,7 +39,7 @@
 		<solrj.version>4.10.3</solrj.version>
 		<jsoup.version>1.11.1</jsoup.version>
 		<stax2.version>3.0.2</stax2.version>
-		
+
 	</properties>
 	<dependencyManagement>
 		<dependencies>
@@ -185,101 +185,128 @@
 				<artifactId>solr-solrj</artifactId>
 				<version>${solrj.version}</version>
 			</dependency>
-			
+
 			<dependency>
-			  <groupId>org.jsoup</groupId>
-			  <artifactId>jsoup</artifactId>
-			  <version>${jsoup.version}</version>
+				<groupId>org.jsoup</groupId>
+				<artifactId>jsoup</artifactId>
+				<version>${jsoup.version}</version>
 			</dependency>
-			
+
 			<dependency>
-			    <groupId>org.codehaus.woodstox</groupId>
-			    <artifactId>stax2-api</artifactId>
-			    <version>${stax2.version}</version>
+				<groupId>org.codehaus.woodstox</groupId>
+				<artifactId>stax2-api</artifactId>
+				<version>${stax2.version}</version>
 			</dependency>
-			
+
 		</dependencies>
 	</dependencyManagement>
-	
+
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
-		    <groupId>junit</groupId>
-		    <artifactId>junit</artifactId>
-		    <scope>test</scope>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
 		</dependency>
-		
+
 		<!-- HttpClient -->
 		<dependency>
-		    <groupId>org.apache.httpcomponents</groupId>
-		    <artifactId>httpclient</artifactId>
-		    <!-- <scope>test</scope> -->
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<!-- <scope>test</scope> -->
 		</dependency>
 		<!-- jsoup HTML parser library -->
 		<dependency>
-		  <groupId>org.jsoup</groupId>
-		  <artifactId>jsoup</artifactId>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
 		</dependency>
 		<!-- Jackson parser json -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/org.codehaus.woodstox/stax2-api [Jackson transfer2 XML] -->
+		<!-- https://mvnrepository.com/artifact/org.codehaus.woodstox/stax2-api 
+			[Jackson transfer2 XML] -->
 		<!-- https://mvnrepository.com/artifact/org.codehaus.woodstox/stax2-api -->
 		<dependency>
-		    <groupId>org.codehaus.woodstox</groupId>
-		    <artifactId>stax2-api</artifactId>
+			<groupId>org.codehaus.woodstox</groupId>
+			<artifactId>stax2-api</artifactId>
 		</dependency>
-		
+
 		<!-- SolrJ -->
 		<dependency>
 			<groupId>org.apache.solr</groupId>
 			<artifactId>solr-solrj</artifactId>
 		</dependency>
 		<dependency>
-				<groupId>redis.clients</groupId>
-				<artifactId>jedis</artifactId>
+			<groupId>redis.clients</groupId>
+			<artifactId>jedis</artifactId>
 		</dependency>
-			<!-- Spring -->
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-context</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-beans</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-webmvc</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-jdbc</artifactId>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework</groupId>
-				<artifactId>spring-aspects</artifactId>
-			</dependency>
-		
-		
+		<!-- Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jsp-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+	
+		<!-- 时间操作组件 -->
+		<dependency>
+			<groupId>joda-time</groupId>
+			<artifactId>joda-time</artifactId>
+		</dependency>
+		<!-- Apache工具组件 -->
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-io</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-net</groupId>
+			<artifactId>commons-net</artifactId>
+		</dependency>
 	</dependencies>
-	
-	 <build>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <version>2.3.2</version>
-                <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
-                    <encoding>UTF-8</encoding>
-                </configuration>
-            </plugin>
-        </plugins>
-    </build>
-	
-	
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
 </project>
