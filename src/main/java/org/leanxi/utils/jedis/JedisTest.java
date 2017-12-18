@@ -56,7 +56,7 @@ public class JedisTest {
 	@Test
 	public void testJedisCluster() {
 		LOGGER.debug("调用redisCluster开始");
-		HashSet<HostAndPort> nodes = new HashSet<>();
+		HashSet<HostAndPort> nodes = new HashSet<HostAndPort>();
 		nodes.add(new HostAndPort(SINGLE_JEDIS_IP, 7001));
 		nodes.add(new HostAndPort(SINGLE_JEDIS_IP, 7002));
 		nodes.add(new HostAndPort(SINGLE_JEDIS_IP, 7003));
