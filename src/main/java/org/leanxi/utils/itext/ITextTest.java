@@ -55,12 +55,18 @@ public class ITextTest {
 	 */
 	@Test
 	public void getPDFBookAllContents() throws IOException {
-		String bookPath = "./src/main/resources/books/JVM.pdf" ;
+		String bookPath = "./src/main/resources/books/JVM.pdf" ; 
 		PdfReader reader = new PdfReader(bookPath);
-		List<HashMap<String, Object>> list = SimpleBookmark.getBookmark(reader);
-		for (Iterator<HashMap<String, Object>> i = list.iterator(); i.hasNext();) {
+		List<HashMap<String, Object>> contentList = SimpleBookmark.getBookmark(reader);
+		int cnt = 0;
+		for (Iterator<HashMap<String, Object>> contentIter = contentList.iterator(); contentIter.hasNext();) {
+			cnt++ ;
+			if(cnt<=1) {
+				contentIter.next() ;
+				continue ; //跳过第一个节点[reading...]
+			}
 			indentLevelCnt = 0 ;
-			showBookmark((Map<String, Object>) i.next(), indentLevelCnt);
+			showBookmark((Map<String, Object>) contentIter.next(), indentLevelCnt);
 		}
 	}
 
