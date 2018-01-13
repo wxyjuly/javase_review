@@ -40,8 +40,8 @@
 		<jsoup.version>1.11.1</jsoup.version>
 		<stax2.version>3.0.2</stax2.version>
 		<itextpdf.version>5.2.1</itextpdf.version>
-
 	</properties>
+	
 	<dependencyManagement>
 		<dependencies>
 			<!-- 时间操作组件 -->

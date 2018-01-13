@@ -21,16 +21,23 @@ import com.itextpdf.text.pdf.SimpleBookmark;
  * @version v1.0
  */
 public class ITextTest {
-	private static int level = 0; 
-	private static final String LEVEL_T = "  " ;
-	private static StringBuilder levelSub ;
+	private static int indentLevelCnt ; // 缩进层次
+	private static final String INDENT_STR = "	" ; //缩进内容 
+	private static StringBuilder indentStrBuilder ; //最终缩进内容
 	
+	/**
+	 * 
+	 * showBookmark:递归输出目录内容. <br/>
+	 * @author Leon Xi
+	 * @param bookmark
+	 * @param level
+	 */
 	private static void showBookmark(Map<String, Object> bookmark, int level) {
-		levelSub = new StringBuilder("") ;
+		indentStrBuilder = new StringBuilder("") ;
 		for (int i = 0; i < level; i++) {
-			levelSub.append(LEVEL_T) ;			
+			indentStrBuilder.append(INDENT_STR) ;			
 		}
-		System.out.println(levelSub.toString()+bookmark.get("Title"));
+		System.out.println(indentStrBuilder.toString()+bookmark.get("Title"));
 		level++ ;
 		
 		List<Object> kids = (List<Object>) bookmark.get("Kids");
@@ -41,14 +48,19 @@ public class ITextTest {
 		}
 	}
 	
+	/**
+	 * getPDFBookAllContents:打印PDF电子书目录. <br/>
+	 * @author Leon Xi
+	 * @throws IOException
+	 */
 	@Test
 	public void getPDFBookAllContents() throws IOException {
 		String bookPath = "./src/main/resources/books/JVM.pdf" ;
 		PdfReader reader = new PdfReader(bookPath);
 		List<HashMap<String, Object>> list = SimpleBookmark.getBookmark(reader);
 		for (Iterator<HashMap<String, Object>> i = list.iterator(); i.hasNext();) {
-			level = 0 ;
-			showBookmark((Map<String, Object>) i.next(), level);
+			indentLevelCnt = 0 ;
+			showBookmark((Map<String, Object>) i.next(), indentLevelCnt);
 		}
 	}
 
