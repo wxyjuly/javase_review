@@ -7,7 +7,7 @@
  *
 */
 
-package com.leonxi.javase.juc.artconcurrentbook.chapter03;
+package com.leonxi.javase.juc.artconcurrentbook.chapter03.volatiledemo;
 /**
  * ClassName:VolatileFeaturesExample <br/>
  * Date:     2018年1月22日 下午11:34:55 <br/>
