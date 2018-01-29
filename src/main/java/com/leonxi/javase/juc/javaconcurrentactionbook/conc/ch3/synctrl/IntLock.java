@@ -2,12 +2,14 @@ package com.leonxi.javase.juc.javaconcurrentactionbook.conc.ch3.synctrl;
 
 import java.util.concurrent.locks.ReentrantLock;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 public class IntLock implements Runnable {
 	public static ReentrantLock lock1 = new ReentrantLock();
 	public static ReentrantLock lock2 = new ReentrantLock();
 	int lock;
 	/**
-	 * ���Ƽ���˳�򣬷��㹹������
+	 * 控制加锁顺序，方便构造死锁
 	 * @param lock
 	 */
 	public IntLock(int lock) {
@@ -38,7 +40,7 @@ public class IntLock implements Runnable {
 				lock1.unlock();
 			if (lock2.isHeldByCurrentThread())
 				lock2.unlock();
-			System.out.println(Thread.currentThread().getId()+":�߳��˳�");
+			System.out.println(Thread.currentThread().getId()+":线程退出");
 		}
 	}
 
@@ -49,7 +51,7 @@ public class IntLock implements Runnable {
 		Thread t2 = new Thread(r2);
 		t1.start();t2.start();
 		Thread.sleep(1000);
-		//�ж�����һ���߳�
+		//中断其中一个线程
 		t2.interrupt();
 	}
 }

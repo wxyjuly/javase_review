@@ -7,6 +7,13 @@ import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
+import java.util.Random;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
+
 public class ReadWriteLockDemo {
 	private static Lock lock=new ReentrantLock();
 	private static ReentrantReadWriteLock readWriteLock=new ReentrantReadWriteLock();
@@ -16,8 +23,8 @@ public class ReadWriteLockDemo {
 	
 	public Object handleRead(Lock lock) throws InterruptedException{
 		try{
-			lock.lock();				//ģ�������
-			Thread.sleep(1000);			//�������ĺ�ʱԽ�࣬��д�������ƾ�Խ����
+			lock.lock();				//模拟读操作
+			Thread.sleep(1000);			//读操作的耗时越多，读写锁的优势就越明显
 			return value;				
 		}finally{
 		lock.unlock();
@@ -26,7 +33,7 @@ public class ReadWriteLockDemo {
 
 	public void handleWrite(Lock lock,int index) throws InterruptedException{
 		try{
-			lock.lock();				//ģ��д����
+			lock.lock();				//模拟写操作
 			Thread.sleep(1000);
 			value=index;
 		}finally{

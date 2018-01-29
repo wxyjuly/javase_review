@@ -1,6 +1,5 @@
 
 package com.leonxi.javase.juc.javaconcurrentactionbook.conc.ch3.synctrl;
-
 import java.util.Random;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
@@ -17,10 +16,10 @@ public class CyclicBarrierDemo {
 
         public void run() {
             try {
-                //�ȴ�����ʿ������
+                //µÈ´ýËùÓÐÊ¿±øµ½Æë
                 cyclic.await();
                 doWork();
-                //�ȴ�����ʿ����ɹ���
+                //µÈ´ýËùÓÐÊ¿±øÍê³É¹¤×÷
                 cyclic.await();
             } catch (InterruptedException e) {
                 e.printStackTrace();
@@ -35,7 +34,7 @@ public class CyclicBarrierDemo {
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.println(soldier + ":�������");
+            System.out.println(soldier + ":ÈÎÎñÍê³É");
         }
     }
 
@@ -49,9 +48,9 @@ public class CyclicBarrierDemo {
 
         public void run() {
             if (flag) {
-                System.out.println("˾��:[ʿ��" + N + "����������ɣ�]");
+                System.out.println("Ë¾Áî:[Ê¿±ø" + N + "¸ö£¬ÈÎÎñÍê³É£¡]");
             } else {
-                System.out.println("˾��:[ʿ��" + N + "����������ϣ�]");
+                System.out.println("Ë¾Áî:[Ê¿±ø" + N + "¸ö£¬¼¯ºÏÍê±Ï£¡]");
                 flag = true;
             }
         }
@@ -62,11 +61,11 @@ public class CyclicBarrierDemo {
         Thread[] allSoldier=new Thread[N];
         boolean flag = false;
         CyclicBarrier cyclic = new CyclicBarrier(N, new BarrierRun(flag, N));
-        //�������ϵ㣬��Ҫ��Ϊ��ִ���������
-        System.out.println("���϶��飡");
+        //ÉèÖÃÆÁÕÏµã£¬Ö÷ÒªÊÇÎªÁËÖ´ÐÐÕâ¸ö·½·¨
+        System.out.println("¼¯ºÏ¶ÓÎé£¡");
         for (int i = 0; i < N; ++i) {
-            System.out.println("ʿ�� "+i+" ������");
-            allSoldier[i]=new Thread(new Soldier(cyclic, "ʿ�� " + i));
+            System.out.println("Ê¿±ø "+i+" ±¨µÀ£¡");
+            allSoldier[i]=new Thread(new Soldier(cyclic, "Ê¿±ø " + i));
             allSoldier[i].start();
         }
     }

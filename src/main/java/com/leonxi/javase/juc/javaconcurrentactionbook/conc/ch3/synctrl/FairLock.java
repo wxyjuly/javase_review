@@ -10,7 +10,7 @@ public class FairLock implements Runnable {
 		while(true){
 		try{
 			fairLock.lock();
-			System.out.println(Thread.currentThread().getName()+" �����");
+			System.out.println(Thread.currentThread().getName()+" 获得锁");
 		}finally{
 			fairLock.unlock();
 		}
