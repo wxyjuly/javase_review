@@ -7,8 +7,8 @@ import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 
 /**
- * submit�Ե��쳣
- * 1. ��Future.get()����쳣
+ * submit吃掉异常
+ * 1. 用Future.get()获得异常
  * 2. try-catch
  * @author Geym
  *

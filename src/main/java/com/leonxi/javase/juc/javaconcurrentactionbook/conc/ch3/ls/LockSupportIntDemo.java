@@ -17,10 +17,10 @@ public class LockSupportIntDemo {
 				System.out.println("in "+getName());
 				LockSupport.park();
 				if(Thread.interrupted()){
-					System.out.println(getName()+" ���ж���");
+					System.out.println(getName()+" 被中断了");
 				}
 			}
-			System.out.println(getName()+"ִ�н���");
+			System.out.println(getName()+"执行结束");
 		}
 	}
 

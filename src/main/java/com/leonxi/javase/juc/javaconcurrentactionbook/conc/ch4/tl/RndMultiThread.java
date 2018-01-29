@@ -59,9 +59,9 @@ public class RndMultiThread {
         for (int i = 0; i < THREAD_COUNT; i++) {
             totaltime += futs[i].get();
         }
-        System.out.println("���̷߳���ͬһ��Randomʵ��:" + totaltime + "ms");
+        System.out.println("多线程访问同一个Random实例:" + totaltime + "ms");
 
-        //ThreadLocal�����
+        //ThreadLocal的情况
         for (int i = 0; i < THREAD_COUNT; i++) {
             futs[i] = exe.submit(new RndTask(1));
         }
@@ -69,7 +69,7 @@ public class RndMultiThread {
         for (int i = 0; i < THREAD_COUNT; i++) {
             totaltime += futs[i].get();
         }
-        System.out.println("ʹ��ThreadLocal��װRandomʵ��:" + totaltime + "ms");
+        System.out.println("使用ThreadLocal包装Random实例:" + totaltime + "ms");
         exe.shutdown();
     }
 }
