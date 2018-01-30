@@ -2,7 +2,7 @@ package com.leonxi.javase.juc.javaconcurrentactionbook.conc.ch5.disruptor;
 
 import java.nio.ByteBuffer;
 
-import com.lmax.disruptor.RingBuffer;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.RingBuffer;
 
 public class Producer
 {

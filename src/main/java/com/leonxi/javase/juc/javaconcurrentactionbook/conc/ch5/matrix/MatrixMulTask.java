@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.RecursiveTask;
 
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.operator.MatrixOperator;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.Matrix;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.operator.MatrixOperator;
 
 public class MatrixMulTask extends RecursiveTask<Matrix> {
     Matrix m1;
@@ -27,13 +27,13 @@ public class MatrixMulTask extends RecursiveTask<Matrix> {
             Matrix mRe = MatrixOperator.multiply(m1, m2);
             return mRe;
         } else {
-            // ������ǣ���ô�����ָ����
+            // 如果不是，那么继续分割矩阵
             int rows;
             rows = m1.rows();
-            // ��˵ľ������ָ�
+            // 左乘的矩阵横向分割
             Matrix m11 = m1.getSubMatrix(1, 1, rows / 2, m1.cols());
             Matrix m12 = m1.getSubMatrix(rows / 2 + 1, 1, m1.rows(), m1.cols());
-            // �ҳ˾�������ָ�
+            // 右乘矩阵纵向分割
             Matrix m21 = m2.getSubMatrix(1, 1, m2.rows(), m2.cols() / 2);
             Matrix m22 = m2.getSubMatrix(1, m2.cols() / 2 + 1, m2.rows(), m2.cols());
 

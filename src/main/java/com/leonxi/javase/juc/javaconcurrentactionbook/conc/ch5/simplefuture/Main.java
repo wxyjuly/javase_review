@@ -5,13 +5,14 @@ public class Main {
         Client client = new Client();
         
         Data data = client.request("a");
-        System.out.println("�������");
+        System.out.println("请求完毕");
         try {
-        	//���������һ��sleep�����˶�����ҵ���߼��Ĵ���
+        	//这里可以用一个sleep代替了对其它业务逻辑的处理
             Thread.sleep(2000);
         } catch (InterruptedException e) {
         }
-        	//ʹ����ʵ������
-        System.out.println("���� = " + data.getResult());
+        	//使用真实的数据
+        System.out.println("数据 = " + data.getResult());
     }
 }
+

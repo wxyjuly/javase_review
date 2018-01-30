@@ -29,7 +29,7 @@ public class NIOClient {
 			while (ite.hasNext()) {
 				SelectionKey key = ite.next();
 				ite.remove();
-				// �����¼�����
+				// 连接事件发生
 				if (key.isConnectable()) {
 					connect(key);
 				} else if (key.isReadable()) {
@@ -40,26 +40,26 @@ public class NIOClient {
 	}
 
 	/**
-	 * �����ȡ����˷�������Ϣ ���¼�
+	 * 处理读取服务端发来的信息 的事件
 	 * 
 	 * @param key
 	 * @throws IOException
 	 */
 	public void read(SelectionKey key) throws IOException {
 		SocketChannel channel = (SocketChannel) key.channel();
-		// ������ȡ�Ļ�����
+		// 创建读取的缓冲区
 		ByteBuffer buffer = ByteBuffer.allocate(100);
 		channel.read(buffer);
 		byte[] data = buffer.array();
 		String msg = new String(data).trim();
-		System.out.println("�ͻ����յ���Ϣ��" + msg);
+		System.out.println("客户端收到信息：" + msg);
 		channel.close();
 		key.selector().close();
 	}
 
 	public void connect(SelectionKey key) throws IOException {
 		SocketChannel channel = (SocketChannel) key.channel();
-		// ����������ӣ����������
+		// 如果正在连接，则完成连接
 		if (channel.isConnectionPending()) {
 			channel.finishConnect();
 		}
@@ -70,7 +70,7 @@ public class NIOClient {
 	}
 
 	/**
-	 * �����ͻ��˲���
+	 * 启动客户端测试
 	 * 
 	 * @throws IOException
 	 */

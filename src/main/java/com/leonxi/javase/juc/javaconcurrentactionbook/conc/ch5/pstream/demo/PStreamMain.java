@@ -1,9 +1,9 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.conc.ch5.pstream.demo;
 /**
- * ����������������������
+ * 并行流解决数据相关性问题
  * (B+C)*B/2
- * P1:A��B+C 
- * P2:D��A��B 
+ * P1:A＝B+C 
+ * P2:D＝A×B 
  * P3:D=D/2 
  * Output:D
  * 

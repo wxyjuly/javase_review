@@ -3,7 +3,7 @@ package com.leonxi.javase.juc.javaconcurrentactionbook.conc.ch5.simplefuture;
 public class RealData implements Data {
     protected final String result;
     public RealData(String para) {
-    	//RealData�Ĺ�����ܺ�������Ҫ�û��ȴ��ܾ�
+    	//RealData的构造可能很慢，需要用户等待很久
     	StringBuffer sb=new StringBuffer();
         for (int i = 0; i < 10; i++) {
         	sb.append(para);
@@ -18,3 +18,4 @@ public class RealData implements Data {
         return result;
     }
 }
+

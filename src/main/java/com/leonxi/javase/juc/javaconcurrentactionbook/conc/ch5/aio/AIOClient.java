@@ -1,6 +1,5 @@
 
 package com.leonxi.javase.juc.javaconcurrentactionbook.conc.ch5.aio;
-
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
@@ -47,7 +46,7 @@ public class AIOClient {
             public void failed(Throwable exc, Object attachment) {
             }
         });
-        //�������߳����Ͻ���������ȴ���������ȫ�����
+        //由于主线程马上结束，这里等待上述处理全部完成
 //        Thread.sleep(1000);
     }
 }

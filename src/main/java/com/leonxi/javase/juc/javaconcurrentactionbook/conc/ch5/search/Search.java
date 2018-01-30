@@ -11,7 +11,7 @@ import java.util.concurrent.Future;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * ��������
+ * 并发查找
  * 
  * @author Administrator
  *
@@ -45,7 +45,7 @@ public class Search {
 		        return result.get();
 		    }
 			if(arr[i] == searchValue){
-			    //�������ʧ�ܣ���ʾ�����߳��Ѿ����ҵ���
+			    //如果设置失败，表示其它线程已经先找到了
 			    if(!result.compareAndSet(-1, i)){
 			        return result.get();
 			    }

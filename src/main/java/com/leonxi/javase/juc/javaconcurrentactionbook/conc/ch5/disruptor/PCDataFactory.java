@@ -1,6 +1,6 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.conc.ch5.disruptor;
 
-import com.lmax.disruptor.EventFactory;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.EventFactory;
 
 public class PCDataFactory implements EventFactory<PCData>
 {

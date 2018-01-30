@@ -28,7 +28,7 @@ public class EchoServer {
                 System.out.println(clientSocket.getRemoteSocketAddress() + " connect!");
                 is = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                 os = new PrintWriter(clientSocket.getOutputStream(), true);
-                // ��InputStream���ж�ȡ�ͻ��������͵�����  
+                // 从InputStream当中读取客户端所发送的数据  
                 String inputLine = null;
                 while ((inputLine = is.readLine()) != null) {
                     os.println(inputLine);

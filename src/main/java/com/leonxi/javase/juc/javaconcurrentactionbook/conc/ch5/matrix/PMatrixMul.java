@@ -4,9 +4,9 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ForkJoinPool;
 import java.util.concurrent.ForkJoinTask;
 
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.MatrixFactory;
-import org.jmatrices.dbl.operator.MatrixOperator;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.Matrix;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.MatrixFactory;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.operator.MatrixOperator;
 
 /**
  * A*B
@@ -29,7 +29,7 @@ public class PMatrixMul {
         MatrixMulTask task=new MatrixMulTask(m1,m2,null);
         ForkJoinTask<Matrix> result = forkJoinPool.submit(task);
         Matrix pr=result.get();
-        //���ʹ��м������Ƿ�һ�� ʹ��-ea��������
+        //检查和串行计算结果是否一致 使用-ea开启断言
         assert sr.toString().equals(pr.toString());
 //        System.out.println(pr);
     }

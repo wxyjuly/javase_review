@@ -53,7 +53,7 @@ public class MultiThreadNIOEchoServer {
             // We've enqueued data to be written to the client, we must
             // not set interest in OP_WRITE.
             sk.interestOps(SelectionKey.OP_READ | SelectionKey.OP_WRITE);
-            //ǿ��selector��������
+            //强迫selector立即返回
             selector.wakeup();
         }
     }

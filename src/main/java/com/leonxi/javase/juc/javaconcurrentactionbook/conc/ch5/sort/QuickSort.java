@@ -1,5 +1,6 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.conc.ch5.sort;
 
+
 import java.util.Arrays;
 import java.util.List;
 import java.util.Vector;
@@ -40,7 +41,7 @@ public class QuickSort {
 	}
 
 	/**
-	 * ���еݹ�
+	 * 并行递归
 	 * 
 	 * @param arr
 	 * @param low
@@ -70,7 +71,7 @@ public class QuickSort {
 	 * @param arr
 	 * @param low
 	 * @param high
-	 * @return �����λ��
+	 * @return 枢轴的位置
 	 */
 	private static int partition(int[] arr, int low, int high) {
 		int pivot = arr[low];

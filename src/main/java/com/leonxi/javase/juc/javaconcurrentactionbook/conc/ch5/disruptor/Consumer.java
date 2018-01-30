@@ -1,6 +1,6 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.conc.ch5.disruptor;
 
-import com.lmax.disruptor.WorkHandler;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.WorkHandler;
 
 public class Consumer implements WorkHandler<PCData> {
 	@Override

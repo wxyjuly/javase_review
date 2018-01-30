@@ -1,6 +1,6 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.conc.ch5.disruptor;
 
-import com.lmax.disruptor.EventHandler;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.EventHandler;
 
 public class PCDataHandler2 implements EventHandler<PCData>
 {

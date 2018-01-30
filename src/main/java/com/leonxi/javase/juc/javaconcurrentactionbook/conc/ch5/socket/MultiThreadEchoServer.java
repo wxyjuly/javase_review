@@ -26,7 +26,7 @@ public class MultiThreadEchoServer {
 
                 is = new BufferedReader(new InputStreamReader(clientSocket.getInputStream()));
                 os = new PrintWriter(clientSocket.getOutputStream(), true);
-                // ��InputStream���ж�ȡ�ͻ��������͵�����  
+                // 从InputStream当中读取客户端所发送的数据  
                 String inputLine = null;
                 long b=System.currentTimeMillis();
                 while ((inputLine = is.readLine()) != null) {

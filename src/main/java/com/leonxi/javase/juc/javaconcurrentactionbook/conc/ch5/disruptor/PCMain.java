@@ -4,10 +4,10 @@ import java.nio.ByteBuffer;
 import java.util.concurrent.Executor;
 import java.util.concurrent.Executors;
 
-import com.lmax.disruptor.BlockingWaitStrategy;
-import com.lmax.disruptor.RingBuffer;
-import com.lmax.disruptor.dsl.Disruptor;
-import com.lmax.disruptor.dsl.ProducerType;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.BlockingWaitStrategy;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.RingBuffer;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.dsl.Disruptor;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.dsl.ProducerType;
 
 public class PCMain
 {

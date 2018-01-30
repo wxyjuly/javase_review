@@ -45,7 +45,7 @@ public final class FalseSharing implements Runnable {
 		}
 	}
 
-	//JDK 7 ĳЩ�汾 �� JDK 8�� ��Ѳ��õ������Ż� ���� �����Ż��ֶ�ʧЧ
+	//JDK 7 某些版本 和 JDK 8中 会把不用的数据优化 导致 这种优化手段失效
 	// Unlock: -XX:-RestrictContended (JDK 8  option)
 	//@sun.misc.Contended 
 	public final static class VolatileLong {

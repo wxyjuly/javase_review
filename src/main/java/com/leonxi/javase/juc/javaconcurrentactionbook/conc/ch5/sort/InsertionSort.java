@@ -1,12 +1,13 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.conc.ch5.sort;
 
+
 import java.util.Arrays;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 /**
- * ��������
+ * 插入排序
  * 
  * @author Administrator
  *
@@ -26,21 +27,21 @@ public class InsertionSort {
 		int length = arr.length;
 		int j, i, key;
 		for (i = 1; i < length; i++) {
-			//keyΪҪ׼�������Ԫ��
+			//key为要准备插入的元素
 			key = arr[i];
 			j = i - 1;
 			while (j >= 0 && arr[j] > key) {
 				arr[j + 1] = arr[j];
 				j--;
 			}
-			//�ҵ����ʵ�λ�� ����key
+			//找到合适的位置 插入key
 			arr[j + 1] = key;
 			System.out.println(Arrays.toString(arr));
 		}
 	}
 
 	public static void shellSort(int[] arr) {
-		// ���������hֵ
+		// 计算出最大的h值
 		int h = 1;
 		while (h <= arr.length / 3) {
 			h = h * 3 + 1;
@@ -60,7 +61,7 @@ public class InsertionSort {
 				System.out.println(Arrays.toString(arr));
 			}
 			System.out.println(Arrays.toString(arr));
-			// �������һ��hֵ
+			// 计算出下一个h值
 			h = (h - 1) / 3;
 		}
 	}
@@ -92,7 +93,7 @@ public class InsertionSort {
 	}
 
 	public static void pShellSort(int[] arr) throws InterruptedException {
-		// ���������hֵ
+		// 计算出最大的h值
 		int h = 1;
 		CountDownLatch latch = null;
 		while (h <= arr.length / 3) {
@@ -103,7 +104,7 @@ public class InsertionSort {
 			if (h >= 4)
 				latch = new CountDownLatch(arr.length - h);
 			for (int i = h; i < arr.length; i++) {
-				// �����߳�����
+				// 控制线程数量
 				if (h >= 4) {
 					pool.execute(new ShellSortTask(i, h, latch));
 				} else {
@@ -119,9 +120,9 @@ public class InsertionSort {
 					// System.out.println(Arrays.toString(arr));
 				}
 			}
-			// �ȴ��߳�������ɣ�������һ������
+			// 等待线程排序完成，进入下一次排序
 			latch.await();
-			// �������һ��hֵ
+			// 计算出下一个h值
 			h = (h - 1) / 3;
 		}
 	}
