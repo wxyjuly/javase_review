@@ -15,9 +15,9 @@
  */
 package com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor;
 
-import sun.misc.Unsafe;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.util.Util;
 
-import com.lmax.disruptor.util.Util;
+import sun.misc.Unsafe;
 
 
 class LhsPadding

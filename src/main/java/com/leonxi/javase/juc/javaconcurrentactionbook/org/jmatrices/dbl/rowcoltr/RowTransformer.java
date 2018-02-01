@@ -1,9 +1,7 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.rowcoltr;
 
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.transformer.MatrixTransformer;
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.MatrixFactory;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.Matrix;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.transformer.MatrixTransformer;
 
 /**
  * RowTransformer  captures the operations that can be carried out on rows of a matrix

@@ -15,9 +15,9 @@
  */
 package com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.dsl;
 
-import com.lmax.disruptor.BatchEventProcessor;
-import com.lmax.disruptor.EventHandler;
-import com.lmax.disruptor.ExceptionHandler;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.BatchEventProcessor;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.EventHandler;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.ExceptionHandler;
 
 /**
  * A support class used as part of setting an exception handler for a specific event handler.

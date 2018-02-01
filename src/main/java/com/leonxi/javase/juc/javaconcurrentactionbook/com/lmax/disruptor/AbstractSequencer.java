@@ -17,7 +17,7 @@ package com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor;
 
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
-import com.lmax.disruptor.util.Util;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.util.Util;
 
 /**
  * Base class for the various sequencer types (single/multi).  Provides

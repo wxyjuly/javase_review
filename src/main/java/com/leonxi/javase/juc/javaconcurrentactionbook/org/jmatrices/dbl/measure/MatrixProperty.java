@@ -1,11 +1,10 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.measure;
 
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.MatrixFactory;
-import org.jmatrices.dbl.decomposition.CholeskyDecomposition;
-import org.jmatrices.dbl.decomposition.LUDecomposition;
-import org.jmatrices.dbl.transformer.MatrixTransformer;
-import org.jmatrices.dbl.Matrix;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.Matrix;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.MatrixFactory;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.decomposition.CholeskyDecomposition;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.decomposition.LUDecomposition;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.transformer.MatrixTransformer;
 
 /**
  * MatrixProperty

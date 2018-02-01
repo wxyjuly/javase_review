@@ -1,8 +1,7 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.measure;
 
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.operator.MatrixOperator;
-import org.jmatrices.dbl.Matrix;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.Matrix;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.operator.MatrixOperator;
 
 /**
  * MatricesMeasure provides methods applicable to two (or more) matrices

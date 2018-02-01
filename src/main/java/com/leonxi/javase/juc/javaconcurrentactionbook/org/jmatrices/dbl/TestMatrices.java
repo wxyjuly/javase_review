@@ -1,15 +1,15 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl;
 
-import org.jmatrices.dbl.decomposition.LUDecomposition;
-import org.jmatrices.dbl.decomposition.SingularValueDecomposition;
-import org.jmatrices.dbl.measure.MatrixMeasure;
-import org.jmatrices.dbl.measure.MatrixProperty;
-import org.jmatrices.dbl.operator.MatrixOperator;
-import org.jmatrices.dbl.rowcoltr.ColumnTransformer;
-import org.jmatrices.dbl.rowcoltr.RowTransformer;
-import org.jmatrices.dbl.transformer.MatrixEBETransformation;
-import org.jmatrices.dbl.transformer.MatrixEBETransformer;
-import org.jmatrices.dbl.transformer.MatrixTransformer;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.decomposition.LUDecomposition;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.decomposition.SingularValueDecomposition;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.measure.MatrixMeasure;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.measure.MatrixProperty;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.operator.MatrixOperator;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.rowcoltr.ColumnTransformer;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.rowcoltr.RowTransformer;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.transformer.MatrixEBETransformation;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.transformer.MatrixEBETransformer;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.transformer.MatrixTransformer;
 
 /**
  * TestMatrices

@@ -1,9 +1,7 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.rowcoltr;
 
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.MatrixFactory;
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.MatrixFactory;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.Matrix;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.MatrixFactory;
 
 /**
  * ColumnTransformer captures the operations that can be carried out on columns of a matrix

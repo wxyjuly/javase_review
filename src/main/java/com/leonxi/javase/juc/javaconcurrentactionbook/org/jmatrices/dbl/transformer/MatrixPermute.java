@@ -1,7 +1,6 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.transformer;
 
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.Matrix;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.Matrix;
 
 /**
  * MatrixPermute

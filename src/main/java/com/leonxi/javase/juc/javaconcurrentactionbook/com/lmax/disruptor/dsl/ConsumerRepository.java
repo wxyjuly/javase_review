@@ -15,9 +15,19 @@
  */
 package com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.dsl;
 
-import com.lmax.disruptor.*;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.IdentityHashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
-import java.util.*;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.EventHandler;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.EventProcessor;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.Sequence;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.SequenceBarrier;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.WorkerPool;
 
 /**
  * Provides a repository mechanism to associate {@link EventHandler}s with {@link EventProcessor}s

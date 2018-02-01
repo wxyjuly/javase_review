@@ -1,5 +1,6 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.conc.remove.prime;
 
+
 import java.util.BitSet;
 
 public class SyncBitSet {
@@ -7,7 +8,7 @@ public class SyncBitSet {
     
     public SyncBitSet(int nbits){
         bs=new BitSet(nbits);
-        //Ĭ�϶����������޳�����������
+        //默认都是质数，剔除不是质数的
         bs.set(0, nbits,true);
     }
     

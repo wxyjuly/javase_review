@@ -1,9 +1,7 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.transformer;
 
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.MatrixFactory;
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.MatrixFactory;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.Matrix;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.MatrixFactory;
 
 /**
  * MatrixEBETransformer is responsible for applying the <code>MatrixEBETransformation</code> to each element in a matrix

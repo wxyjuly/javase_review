@@ -1,8 +1,10 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.dsl;
 
-import com.lmax.disruptor.*;
-
 import java.util.concurrent.Executor;
+
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.Sequence;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.SequenceBarrier;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.WorkerPool;
 
 class WorkerPoolInfo<T> implements ConsumerInfo
 {

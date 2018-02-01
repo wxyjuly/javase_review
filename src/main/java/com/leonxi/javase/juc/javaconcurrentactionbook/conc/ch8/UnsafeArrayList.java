@@ -1,9 +1,10 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.conc.ch8;
 
+
 import java.util.ArrayList;
 
 /**
- * �����̶߳����������С��飬�Ⱥ��������ʱ ���� out of bound
+ * 两个线程都过了数组大小检查，先后插入数据时 引起 out of bound
  * @author Geym
  *
  */

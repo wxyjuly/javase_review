@@ -1,19 +1,23 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.client;
 
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.MatrixFactory;
-import org.jmatrices.dbl.decomposition.*;
-import org.jmatrices.dbl.measure.MatricesMeasure;
-import org.jmatrices.dbl.measure.MatrixMeasure;
-import org.jmatrices.dbl.operator.MatrixEBEOperation;
-import org.jmatrices.dbl.operator.MatrixOperator;
-import org.jmatrices.dbl.rowcoltr.ColumnTransformer;
-import org.jmatrices.dbl.transformer.MatrixEBETransformation;
-import org.jmatrices.dbl.transformer.MatrixEBETransformer;
-import org.jmatrices.dbl.transformer.MatrixTransformer;
-
 import java.util.ArrayList;
 import java.util.Iterator;
+
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.Matrix;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.MatrixFactory;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.decomposition.CholeskyDecomposition;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.decomposition.EigenvalueDecomposition;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.decomposition.LUDecomposition;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.decomposition.QRDecomposition;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.decomposition.SingularValueDecomposition;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.measure.MatricesMeasure;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.measure.MatrixMeasure;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.operator.MatrixEBEOperation;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.operator.MatrixOperator;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.rowcoltr.ColumnTransformer;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.transformer.MatrixEBETransformation;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.transformer.MatrixEBETransformer;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.transformer.MatrixTransformer;
 
 /**
  * MatlabSyntax

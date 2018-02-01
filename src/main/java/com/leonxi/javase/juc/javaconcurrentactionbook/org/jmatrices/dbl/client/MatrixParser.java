@@ -1,10 +1,10 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.client;
 
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.MatrixFactory;
-
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.Matrix;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.MatrixFactory;
 
 /**
  * MatrixParser

@@ -1,11 +1,11 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl;
 
-import org.jmatrices.dbl.transformer.MatrixConditionalEBETransformation;
-import org.jmatrices.dbl.transformer.MatrixEBETransformation;
-import org.jmatrices.dbl.transformer.MatrixEBETransformer;
-
 import java.util.Iterator;
 import java.util.List;
+
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.transformer.MatrixConditionalEBETransformation;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.transformer.MatrixEBETransformation;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.transformer.MatrixEBETransformer;
 
 /**
  * MatrixFactory is one-stop shop for creating matrices.

@@ -1,8 +1,8 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.dsl;
 
-import com.lmax.disruptor.EventProcessor;
-import com.lmax.disruptor.RingBuffer;
-import com.lmax.disruptor.Sequence;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.EventProcessor;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.RingBuffer;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.Sequence;
 
 /**
  * A factory interface to make it possible to include custom event processors in a chain:

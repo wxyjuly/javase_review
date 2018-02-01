@@ -17,7 +17,7 @@ package com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor;
 
 import java.util.concurrent.locks.LockSupport;
 
-import com.lmax.disruptor.util.Util;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.util.Util;
 
 abstract class SingleProducerSequencerPad extends AbstractSequencer
 {

@@ -1,7 +1,5 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl;
 
-import org.jmatrices.dbl.MatrixVector;
-
 /**
  * MatrixVectorImpl
  * <p>

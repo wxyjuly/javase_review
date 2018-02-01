@@ -1,9 +1,7 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.decomposition;
 
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.MatrixFactory;
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.MatrixFactory;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.Matrix;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.MatrixFactory;
 
 /**
  * QRDecomposition

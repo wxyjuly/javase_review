@@ -19,21 +19,21 @@ import java.util.concurrent.Executor;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicBoolean;
 
-import com.lmax.disruptor.BatchEventProcessor;
-import com.lmax.disruptor.EventFactory;
-import com.lmax.disruptor.EventHandler;
-import com.lmax.disruptor.EventProcessor;
-import com.lmax.disruptor.EventTranslator;
-import com.lmax.disruptor.EventTranslatorOneArg;
-import com.lmax.disruptor.ExceptionHandler;
-import com.lmax.disruptor.RingBuffer;
-import com.lmax.disruptor.Sequence;
-import com.lmax.disruptor.SequenceBarrier;
-import com.lmax.disruptor.TimeoutException;
-import com.lmax.disruptor.WaitStrategy;
-import com.lmax.disruptor.WorkHandler;
-import com.lmax.disruptor.WorkerPool;
-import com.lmax.disruptor.util.Util;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.BatchEventProcessor;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.EventFactory;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.EventHandler;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.EventProcessor;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.EventTranslator;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.EventTranslatorOneArg;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.ExceptionHandler;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.RingBuffer;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.Sequence;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.SequenceBarrier;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.TimeoutException;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.WaitStrategy;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.WorkHandler;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.WorkerPool;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.util.Util;
 
 /**
  * A DSL-style API for setting up the disruptor pattern around a ring buffer

@@ -21,10 +21,10 @@ import java.nio.ByteBuffer;
 import java.security.AccessController;
 import java.security.PrivilegedExceptionAction;
 
-import sun.misc.Unsafe;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.EventProcessor;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.Sequence;
 
-import com.lmax.disruptor.EventProcessor;
-import com.lmax.disruptor.Sequence;
+import sun.misc.Unsafe;
 
 /**
  * Set of common functions used by the Disruptor

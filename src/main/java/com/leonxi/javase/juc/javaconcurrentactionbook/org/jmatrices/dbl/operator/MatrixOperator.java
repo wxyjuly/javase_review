@@ -1,12 +1,12 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.operator;
 
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.MatrixFactory;
-import org.jmatrices.dbl.decomposition.LUDecomposition;
-import org.jmatrices.dbl.decomposition.QRDecomposition;
-import org.jmatrices.dbl.measure.MatrixProperty;
-import org.jmatrices.dbl.transformer.MatrixEBETransformation;
-import org.jmatrices.dbl.transformer.MatrixEBETransformer;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.Matrix;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.MatrixFactory;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.decomposition.LUDecomposition;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.decomposition.QRDecomposition;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.measure.MatrixProperty;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.transformer.MatrixEBETransformation;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.transformer.MatrixEBETransformer;
 
 /**
  * MatrixOperator provides important operations that can be performed on two or more matrices

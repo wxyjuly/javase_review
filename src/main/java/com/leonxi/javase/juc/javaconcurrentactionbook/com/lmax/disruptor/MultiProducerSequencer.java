@@ -17,9 +17,9 @@ package com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor;
 
 import java.util.concurrent.locks.LockSupport;
 
-import sun.misc.Unsafe;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.util.Util;
 
-import com.lmax.disruptor.util.Util;
+import sun.misc.Unsafe;
 
 
 /**

@@ -17,7 +17,7 @@ package com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor;
 
 import java.util.concurrent.atomic.AtomicReferenceFieldUpdater;
 
-import com.lmax.disruptor.util.Util;
+import com.leonxi.javase.juc.javaconcurrentactionbook.com.lmax.disruptor.util.Util;
 
 /**
  * A {@link Sequence} group that can dynamically have {@link Sequence}s added and removed while being

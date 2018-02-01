@@ -1,13 +1,12 @@
 package com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.transformer;
 
-import org.jmatrices.dbl.Matrix;
-import org.jmatrices.dbl.MatrixFactory;
-import org.jmatrices.dbl.measure.MatrixMeasure;
-import org.jmatrices.dbl.measure.MatrixProperty;
-import org.jmatrices.dbl.operator.MatrixOperator;
-
 import java.util.ArrayList;
-import java.util.Iterator;
+
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.Matrix;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.MatrixFactory;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.measure.MatrixMeasure;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.measure.MatrixProperty;
+import com.leonxi.javase.juc.javaconcurrentactionbook.org.jmatrices.dbl.operator.MatrixOperator;
 
 /**
  * MatrixTransformer is responsible for classical non element-by-element transformer of a matrix
