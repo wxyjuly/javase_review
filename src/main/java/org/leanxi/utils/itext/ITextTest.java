@@ -1,6 +1,7 @@
 package org.leanxi.utils.itext;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
@@ -8,7 +9,6 @@ import java.util.Map;
 
 import org.junit.Test;
 
-import com.itextpdf.text.log.Level;
 import com.itextpdf.text.pdf.PdfReader;
 import com.itextpdf.text.pdf.SimpleBookmark;
 
@@ -55,7 +55,14 @@ public class ITextTest {
 	 */
 	@Test
 	public void getPDFBookAllContents() throws IOException {
-		String bookPath = "./src/main/resources/books/JVM.pdf" ; 
+//		String bookPath = "./src/main/resources/books/JVM.pdf" ;
+		
+		String relatePath=System.getProperty("user.dir"); 
+		System.out.println(relatePath);
+		 
+//		System.exit(0); 
+		String bookPath = relatePath + "/src/main/resources/books/JVM.pdf" ; 
+		System.out.println(bookPath);
 		PdfReader reader = new PdfReader(bookPath);
 		List<HashMap<String, Object>> contentList = SimpleBookmark.getBookmark(reader);
 		int cnt = 0;
