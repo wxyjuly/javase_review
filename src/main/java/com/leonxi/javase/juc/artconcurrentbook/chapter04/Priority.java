@@ -20,7 +20,7 @@ import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 6-2
+ * 4-2
  */
 public class Priority {
     private static volatile boolean notStart = true;

@@ -18,7 +18,7 @@ package com.leonxi.javase.juc.artconcurrentbook.chapter04;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 6-13
+ * 4-13
  */
 public class Join {
     public static void main(String[] args) throws Exception {

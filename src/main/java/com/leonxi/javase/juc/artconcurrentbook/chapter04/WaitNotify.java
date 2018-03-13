@@ -20,7 +20,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 6-11
+ * 4-11
  */
 public class WaitNotify {
     static boolean flag = true;

@@ -20,7 +20,7 @@ import java.io.PipedReader;
 import java.io.PipedWriter;
 
 /**
- * 6-12
+ * 4-12
  */
 public class Piped {
 

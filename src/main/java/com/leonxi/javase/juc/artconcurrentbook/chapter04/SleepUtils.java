@@ -18,7 +18,7 @@ package com.leonxi.javase.juc.artconcurrentbook.chapter04;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 6-4
+ * 4-4
  */
 public class SleepUtils {
     public static final void second(long seconds) {

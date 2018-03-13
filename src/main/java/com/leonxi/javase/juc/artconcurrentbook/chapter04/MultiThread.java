@@ -20,7 +20,7 @@ import java.lang.management.ThreadInfo;
 import java.lang.management.ThreadMXBean;
 
 /**
- *  6-1 
+ *  4-1 
  *  Java默认多线程：
 	[5] Attach Listener
 	[4] Signal Dispatcher

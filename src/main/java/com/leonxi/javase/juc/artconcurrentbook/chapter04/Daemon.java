@@ -14,9 +14,7 @@ package com.leonxi.javase.juc.artconcurrentbook.chapter04 ;
  * @author   Leon Xi
  * @version  v1.0
  * @see 	 
- */
-/**
- * 6-5
+ * 4-5
  */
 public class Daemon {
 

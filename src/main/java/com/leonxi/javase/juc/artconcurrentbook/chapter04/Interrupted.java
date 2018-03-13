@@ -18,7 +18,7 @@ package com.leonxi.javase.juc.artconcurrentbook.chapter04;
 import java.util.concurrent.TimeUnit;
 
 /**
- * 6-7
+ * 4-7
  */
 public class Interrupted {
 
