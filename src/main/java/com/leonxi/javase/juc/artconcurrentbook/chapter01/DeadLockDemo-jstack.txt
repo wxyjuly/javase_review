@@ -1,0 +1,88 @@
+2018-03-25 15:40:58
+Full thread dump Java HotSpot(TM) 64-Bit Server VM (25.92-b14 mixed mode):
+
+"DestroyJavaVM" #11 prio=5 os_prio=0 tid=0x0000000001c80000 nid=0x1668 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Thread-1" #10 prio=5 os_prio=0 tid=0x000000005617c000 nid=0x328 waiting for monitor entry [0x0000000056abe000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at com.leonxi.javase.juc.artconcurrentbook.chapter01.DeadLockDemo$2.run(DeadLockDemo.java:53)
+	- waiting to lock <0x00000000eb3cd9d8> (a java.lang.String)
+	- locked <0x00000000eb3cda08> (a java.lang.String)
+	at java.lang.Thread.run(Thread.java:745)
+
+"Thread-0" #9 prio=5 os_prio=0 tid=0x000000005617b000 nid=0xaf4 waiting for monitor entry [0x000000005684f000]
+   java.lang.Thread.State: BLOCKED (on object monitor)
+	at com.leonxi.javase.juc.artconcurrentbook.chapter01.DeadLockDemo$1.run(DeadLockDemo.java:42)
+	- waiting to lock <0x00000000eb3cda08> (a java.lang.String)
+	- locked <0x00000000eb3cd9d8> (a java.lang.String)
+	at java.lang.Thread.run(Thread.java:745)
+
+"Service Thread" #8 daemon prio=9 os_prio=0 tid=0x0000000056150800 nid=0xb74 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C1 CompilerThread1" #7 daemon prio=9 os_prio=2 tid=0x0000000054d05800 nid=0xf4c waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"C2 CompilerThread0" #6 daemon prio=9 os_prio=2 tid=0x0000000054cff800 nid=0x17c8 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Attach Listener" #5 daemon prio=5 os_prio=2 tid=0x0000000054ce9000 nid=0x15e4 waiting on condition [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Signal Dispatcher" #4 daemon prio=9 os_prio=2 tid=0x0000000054cd3000 nid=0xb50 runnable [0x0000000000000000]
+   java.lang.Thread.State: RUNNABLE
+
+"Finalizer" #3 daemon prio=8 os_prio=1 tid=0x0000000054cc0000 nid=0x1714 in Object.wait() [0x00000000558ff000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000eb308ee0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:143)
+	- locked <0x00000000eb308ee0> (a java.lang.ref.ReferenceQueue$Lock)
+	at java.lang.ref.ReferenceQueue.remove(ReferenceQueue.java:164)
+	at java.lang.ref.Finalizer$FinalizerThread.run(Finalizer.java:209)
+
+"Reference Handler" #2 daemon prio=10 os_prio=2 tid=0x0000000054c76800 nid=0x68c in Object.wait() [0x000000005578f000]
+   java.lang.Thread.State: WAITING (on object monitor)
+	at java.lang.Object.wait(Native Method)
+	- waiting on <0x00000000eb306b50> (a java.lang.ref.Reference$Lock)
+	at java.lang.Object.wait(Object.java:502)
+	at java.lang.ref.Reference.tryHandlePending(Reference.java:191)
+	- locked <0x00000000eb306b50> (a java.lang.ref.Reference$Lock)
+	at java.lang.ref.Reference$ReferenceHandler.run(Reference.java:153)
+
+"VM Thread" os_prio=2 tid=0x0000000054c6e800 nid=0x15f4 runnable 
+
+"GC task thread#0 (ParallelGC)" os_prio=0 tid=0x0000000001c96000 nid=0xb18 runnable 
+
+"GC task thread#1 (ParallelGC)" os_prio=0 tid=0x0000000001c97800 nid=0x448 runnable 
+
+"VM Periodic Task Thread" os_prio=2 tid=0x0000000054d3f800 nid=0x8a8 waiting on condition 
+
+JNI global references: 6
+
+
+Found one Java-level deadlock:
+=============================
+"Thread-1":
+  waiting to lock monitor 0x0000000054c7e168 (object 0x00000000eb3cd9d8, a java.lang.String),
+  which is held by "Thread-0"
+"Thread-0":
+  waiting to lock monitor 0x0000000054c7f558 (object 0x00000000eb3cda08, a java.lang.String),
+  which is held by "Thread-1"
+
+Java stack information for the threads listed above:
+===================================================
+"Thread-1":
+	at com.leonxi.javase.juc.artconcurrentbook.chapter01.DeadLockDemo$2.run(DeadLockDemo.java:53)
+	- waiting to lock <0x00000000eb3cd9d8> (a java.lang.String)
+	- locked <0x00000000eb3cda08> (a java.lang.String)
+	at java.lang.Thread.run(Thread.java:745)
+"Thread-0":
+	at com.leonxi.javase.juc.artconcurrentbook.chapter01.DeadLockDemo$1.run(DeadLockDemo.java:42)
+	- waiting to lock <0x00000000eb3cda08> (a java.lang.String)
+	- locked <0x00000000eb3cd9d8> (a java.lang.String)
+	at java.lang.Thread.run(Thread.java:745)
+
+Found 1 deadlock.
+
