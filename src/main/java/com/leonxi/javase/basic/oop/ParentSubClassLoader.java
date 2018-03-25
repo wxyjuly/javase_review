@@ -117,7 +117,6 @@ public class ParentSubClassLoader {
 =>. subClass [block]
 =>. SubClass.SubClass()
 
-
 ---------2nd new subclass---------
 ->. parent [block] {1}
 ->. parent [block] {2}
@@ -125,16 +124,13 @@ public class ParentSubClassLoader {
 =>. subClass [block]
 =>. SubClass.SubClass()
 
-
 ---------1st new parent---------
 ->. parent [block] {1}
 ->. parent [block] {2}
 ->. Parent.Parent()
 
-
 ---------2nd new parent---------
 ->. parent [block] {1}
 ->. parent [block] {2}
 ->. Parent.Parent()
-
 */
