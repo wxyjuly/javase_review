@@ -20,7 +20,7 @@ import com.itextpdf.text.pdf.SimpleBookmark;
  * @author Leon Xi
  * @version v1.0
  */
-public class ITextTest {
+public class ITextPDFBookContentPrint {
 	private static int indentLevelCnt ; // 缩进层次
 	private static final String INDENT_STR = "	" ; //缩进内容 
 	private static StringBuilder indentStrBuilder ; //最终缩进内容
